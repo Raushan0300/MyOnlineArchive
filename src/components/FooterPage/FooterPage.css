@@ -1,0 +1,31 @@
+.footerContainer{
+    display: flex;
+    padding: 3vh 5vw;
+    border-top: 1px solid #F0F0F0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.footerTitle{
+    font-family: sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #030303;
+}
+.footerSubtitle{
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #424242;
+    margin-top: 1vh;
+}
+.footerConnect{
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #030303;
+    margin-top: 3vh;
+}
+.footerLogo{
+    display: flex;
+    gap: 1vw;
+    margin-top: 1vh;
+}
