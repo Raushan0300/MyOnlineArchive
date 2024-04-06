@@ -1,0 +1,59 @@
+.dashboardContainer{
+    display: flex;
+    padding: 10vh;
+    flex-wrap: wrap;
+    gap: 5vw;
+    overflow-y: scroll;
+}
+.dashboardCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 15%;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    padding: 1.5vh 0;
+    transition: all 0.3s ease;
+}
+.dashboardCard:hover{
+    transform: scale(1.05);
+}
+.dashboardCardTitle{
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: #030303;
+    margin-top: 1rem;
+}
+.dashboardCardContent{
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: #58b7ef;
+    margin-top: 0.5rem;
+    background-color: rgba(250, 235, 215, 0.551);
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 115px;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
+    padding: 1vh 0;
+}
+
+@media screen and (max-width: 768px) {
+    .dashboardCard{
+        width: 45%;
+    }
+    .dashboardContainer{
+        padding: 5vh;
+    }
+    
+}

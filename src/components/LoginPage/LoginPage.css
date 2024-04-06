@@ -62,3 +62,13 @@
     text-decoration: underline;
     cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+    .loginBodyInput{
+        width: 50%;
+    }
+    .loginBodyBtn{
+        width: 30%;
+    }
+    
+}

@@ -3,6 +3,9 @@
     padding: 3vh 5vw;
     border-top: 1px solid #F0F0F0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    bottom: 0;
+    position: absolute;
+    width: 90vw;
 }
 .footerTitle{
     font-family: sans-serif;

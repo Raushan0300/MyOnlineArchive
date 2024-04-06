@@ -1,9 +1,14 @@
 import { useNavigate } from "react-router-dom";
 import "./HomePage.css";
 import HomePageImage from "./HomePageImage/Designer.png";
+import { useEffect, useState } from "react";
 
 const HomePage = () => {
   const navigate=useNavigate();
+  const [compval, setCompval] = useState<Boolean>(false);
+  useEffect(()=>{
+    setCompval(window.innerWidth<768);
+  },[]);
   return (
     <>
       <div className="homeHeader">
@@ -21,7 +26,7 @@ const HomePage = () => {
         <img
           src={HomePageImage}
           alt="HomeLogo"
-          width={"50%"}
+          width={compval?"100%":"50%"}
           style={{ borderRadius: "10px" }}
         />
       </div>

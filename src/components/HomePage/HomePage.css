@@ -59,3 +59,16 @@
     justify-content: center;
     margin-top: 1.5vh;
 }
+@media screen and (max-width: 768px) {
+    .homeBodyTitle{
+        font-size: 40px;
+    }
+    .homeBodyBtn{
+        width: 30vw;
+    }
+    .homeBody{
+        flex-wrap: wrap-reverse;
+        gap: 4vh;
+    }
+    
+}

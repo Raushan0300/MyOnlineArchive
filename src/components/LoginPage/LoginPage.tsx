@@ -12,23 +12,27 @@ const LoginPage = () => {
   const [password, setPassword] = useState("");
 
   const [alertMessage, setAlertMessage] = useState("");
+  const [openDialog, setOpenDialog] = useState(false);
 
   const handleLogin = async() => {
+    setOpenDialog(true);
     const response = await postData("login", {email, password});
     if(response.message){
       setAlertMessage(response.message);
+      localStorage.setItem("id", response.id);
+      navigate("/dashboard");
     } else{
       setAlertMessage(response.error);
+      alert(response.error);
     }
-  };
-
-  const [openDialog, setOpenDialog] = useState(false);
-  const handleDialog=async()=>{
-    setOpenDialog(true);
-    await handleLogin();
     setOpenDialog(false);
-    navigate("/dashboard");
-  }
+  };
+  // const handleDialog=async()=>{
+  //   setOpenDialog(true);
+  //   await handleLogin();
+  //   setOpenDialog(false);
+  //   navigate("/dashboard");
+  // }
 
   return (
     <>
@@ -56,7 +60,7 @@ const LoginPage = () => {
             value={password}
             onChange={(e) => {setPassword(e.target.value)}}
           />
-          <button className="loginBodyBtn" onClick={()=>{handleDialog()}}>Next</button>
+          <button className="loginBodyBtn" onClick={()=>{handleLogin()}}>Next</button>
           {/* <div className="loginPText" onClick={()=>{setIsRegister(!isRegister)}}>{isRegister?"Register":"Login"}</div> */}
         </div>
       </div>
