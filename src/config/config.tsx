@@ -1,10 +1,12 @@
-const baseURL = "http://localhost:8000";
-// const baseURL = "https://myonlinearchive-backend.onrender.com";
+import axios from "axios";
 
-const getData = async (url: string) => {
-  const response = await fetch(`${baseURL}/${url}`);
-  return response.json().then((data) => data);
-};
+// const baseURL = "http://localhost:8000";
+const baseURL = "https://myonlinearchive-backend.onrender.com";
+
+const getData = async(url:string, headers:any) => {
+  const response = await axios.get(`${baseURL}/${url}`, {headers});
+  return response.data;
+}
 
 const postData = async (url: string, data: any) => {
   const response = await fetch(`${baseURL}/${url}`, {

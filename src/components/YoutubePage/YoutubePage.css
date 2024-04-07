@@ -1,0 +1,18 @@
+.mapDiv{
+    padding: 10vh 10vh 2vh 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5vw;
+    justify-content: center;
+    overflow-y: auto;
+    height: 65vh;
+}
+
+@media screen and (max-width: 768px){
+    .mapDiv{
+        padding: 5vh;
+        height: 69vh;
+        /* grid-template-columns: repeat(1, 1fr); */
+    }
+    
+}

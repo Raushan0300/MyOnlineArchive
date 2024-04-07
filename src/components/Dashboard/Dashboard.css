@@ -1,9 +1,12 @@
+.dashboardMainDiv{
+    overflow-y: scroll;
+    height: 77vh;
+}
 .dashboardContainer{
     display: flex;
     padding: 10vh;
     flex-wrap: wrap;
     gap: 5vw;
-    overflow-y: scroll;
 }
 .dashboardCard{
     display: flex;
@@ -54,6 +57,10 @@
     }
     .dashboardContainer{
         padding: 5vh;
+    }
+    .mapDiv{
+        padding: 5vh;
+        grid-template-columns: repeat(1, 1fr);
     }
     
 }

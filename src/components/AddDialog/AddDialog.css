@@ -1,0 +1,128 @@
+.addDialogMainDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.addDialogContainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 50%;
+    height: 50%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    /* padding: 2vh 0; */
+}
+.addDialogCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 1.5vh 0;
+    transition: all 0.3s ease;
+}
+.addDialogCardTitle{
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: #030303;
+    margin-top: 1rem;
+}
+.addDialogCardSubTitle{
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: #58b7ef;
+    margin-top: 0.5rem;
+    background-color: rgba(250, 235, 215, 0.551);
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
+    padding: 1vh 0.5vw;
+}
+.addDialogCardInput{
+    width: 80%;
+    height: 2.5rem;
+    border: 1px solid #58b7ef;
+    border-radius: 5px;
+    padding: 0 1rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    color: #030303;
+}
+.addDialogCardButton{
+    width: 80%;
+    height: 2.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #58b7ef;
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.closeIconImage{
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    z-index: 1000;
+}
+.dialogAddBtn{
+    width: 80%;
+    height: 2.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #58b7ef;
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px){
+    .addDialogContainer{
+        width: 80%;
+        height: 45%;
+    }
+    .addDialogCard{
+        width: 95%;
+    }
+    .addDialogCardButton{
+        width: 90%;
+    }
+    .dialogAddBtn{
+        width: 90%;
+    }
+    .addDialogCardTitle{
+        font-size: 1.2rem;
+    }
+    .addDialogCardSubTitle{
+        font-size: 1rem;
+    }
+}

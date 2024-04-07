@@ -4,6 +4,7 @@ import HomePage from './components/HomePage/HomePage';
 import FooterPage from './components/FooterPage/FooterPage';
 import LoginPage from './components/LoginPage/LoginPage';
 import Dashboard from './components/Dashboard/Dashboard';
+import YoutubePage from './components/YoutubePage/YoutubePage';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Route path='/' element={<HomePage />} />
       <Route path='/login' element={<LoginPage />} />
       <Route path='/dashboard' element={<Dashboard />} />
+      <Route path='/youtube' element={<YoutubePage />} />
     </Routes>
     </BrowserRouter>
     <FooterPage />
